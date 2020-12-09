@@ -21,6 +21,6 @@
 * 基于Redis的缓存管理
 * 自动登录（“记住我”功能）
 
-SpringBoot + Shiro + JPA + MySQL，本机jdk11，如果使用jdk1.8+，注意依赖包的版本。<br>
-直接启动ShiroWebApplication就行了。
+SpringBoot + Shiro + JPA + MySQL + Swagger3，本机jdk11，如果使用jdk1.8+，注意依赖包的版本。<br>
+启动ShiroWebApplication，访问 http://127.0.0.1:10001/shiro/swagger-ui/index.html ，进行接口测试。
 
