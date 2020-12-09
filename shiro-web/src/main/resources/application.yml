@@ -1,0 +1,28 @@
+server:
+  port: 10001
+  servlet:
+    context-path: /shiro
+
+spring:
+  application:
+    name: shiro
+
+  datasource:
+    username: root
+    password: lzc_123456789
+    url: jdbc:mysql://localhost:3306/shiro_learn?serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    name: druidDataSource
+    type: com.alibaba.druid.pool.DruidDataSource
+
+  jpa:
+    show-sql: true
+  redis:
+    host: 127.0.0.1
+    database: 0
+    port: 6379
+
+shiro:
+  loginUrl: /user/msg
+  successUrl: /index
+  unauthorizedUrl: /error
