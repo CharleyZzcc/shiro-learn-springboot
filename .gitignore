@@ -1,0 +1,11 @@
+/.git/
+/.idea/
+/.mvn/
+*/target
+*.iml
+/shiro-simple/.mvn/wrapper/maven-wrapper.jar
+/shiro-web/.mvn/wrapper/maven-wrapper.jar
+/shiro-simple/.mvn/wrapper/maven-wrapper.properties
+/shiro-web/.mvn/wrapper/maven-wrapper.properties
+/shiro-simple/.mvn/wrapper/MavenWrapperDownloader.java
+/shiro-web/.mvn/wrapper/MavenWrapperDownloader.java
