@@ -123,8 +123,12 @@ public class ShiroConfig {
         sessionManager.setSessionDAO(this.sessionDAO());
         // 手动更改session的cookie名称，默认是JSESSIONID
         sessionManager.getSessionIdCookie().setName("TOKEN");
-        // session中cookie的过期时间：默认-1即无过期，手动设置要加上8小时的时区时间，此处是东八区过期时间1小时。然而没有用
+
+        // session cookie虚假的过期时间：默认-1即无过期，手动设置要加上8小时的时区时间，此处是东八区过期时间1小时。然而没有用
         // sessionManager.getSessionIdCookie().setMaxAge(32400);
+
+        // session cookie真正的过期时间，设置东八区30秒后过期，在过期前请求接口，会重置服务器session的过期时间，session cookie过期之后会自动清除
+        // sessionManager.setGlobalSessionTimeout(28_830L);
         return sessionManager;
     }
 
